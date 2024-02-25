@@ -19,7 +19,7 @@ async function bootstrap() {
 
   app.enableCors({
     credentials: true,
-    origin: ['http://localhost:3001', 'https://emizh-client.onrender.com'],
+    origin: ['http://localhost:3001', 'https://emizh-server.onrender.com/'],
   });
 
   const config = new DocumentBuilder()
