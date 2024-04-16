@@ -1,61 +1,67 @@
-import { ApiProperty } from "@nestjs/swagger";
+import { ApiProperty } from '@nestjs/swagger';
 
 export class LoginUserRequest {
-    @ApiProperty({ example: 'Alan' })
-    username: string;
+  @ApiProperty({ example: 'Ivan' })
+  username: string;
 
-    @ApiProperty({ example: 'Alan123' })
-    password: string;
+  @ApiProperty({ example: 'ivan123' })
+  password: string;
 }
 
 export class LoginUserResponse {
-    @ApiProperty({ example: {user: {
+  @ApiProperty({
+    example: {
+      user: {
         userId: 1,
-        username: 'Alan',
-        password: 'Alan123'
-    }} })
-    user: {
-        userId: number;
-        username: string;
-        password: string
-    };
+        username: 'Ivan',
+        password: 'ivan123',
+      },
+    },
+  })
+  user: {
+    userId: number;
+    username: string;
+    password: string;
+  };
 
-    @ApiProperty({ example: 'Logged in' })
-    msg: string;
+  @ApiProperty({ example: 'Logged in' })
+  msg: string;
 }
 
 export class LogoutUserResponse {
-    @ApiProperty({ example: 'session has anded' })
-    msg: string;
+  @ApiProperty({ example: 'session has ended' })
+  msg: string;
 }
 
-export class LoginCheckUserResponse {
-    @ApiProperty({ example: '1' })
-    userId: number;
+export class LoginCheckResponse {
+  @ApiProperty({ example: 1 })
+  userId: number;
 
-    @ApiProperty({ example: 'Alan' })
-    username: string;
+  @ApiProperty({ example: 'Ivan' })
+  username: string;
 
-    @ApiProperty({ example: 'Alan@gmail.com' })
-    email: string;
+  @ApiProperty({ example: 'ivan@gmail.com' })
+  email: string;
 }
 
-export class SignUpResponse {
-    @ApiProperty({ example: '1' })
-    id: number;
+export class SignupResponse {
+  @ApiProperty({ example: 1 })
+  id: number;
 
-    @ApiProperty({ example: 'Sasha_Golovin' })
-    username: string;
+  @ApiProperty({ example: 'Ivan' })
+  username: string;
 
-    @ApiProperty({ example: '$2b$10$EO68VHHk58PYHTrA54gYW.tNsrvZzmp3r40OB57qFcHOI2pidMbYG' })
-    password: string;
+  @ApiProperty({
+    example: '$2b$10$90H0Hn.6Nx0SbrHQCX2xeeYjq.02nS5VpkIIwFAtDtCHEqHK',
+  })
+  password: string;
 
-    @ApiProperty({ example: 'Golovin@gmail.com' })
-    email: string;
+  @ApiProperty({ example: 'ivan@gmail.com' })
+  email: string;
 
-    @ApiProperty({ example: '2024-02-15T18:48:54.504Z' })
-    updatedAt: string;
+  @ApiProperty({ example: '2023-03-17T17:23:33.502Z' })
+  updatedAt: string;
 
-    @ApiProperty({ example: '2024-02-15T18:48:54.504Z' })
-    createdAt: string;
+  @ApiProperty({ example: '2023-03-17T17:23:33.502Z' })
+  createdAt: string;
 }

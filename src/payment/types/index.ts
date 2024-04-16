@@ -20,7 +20,7 @@ export class MakePaymentResponse {
     example: {
       type: 'redirect',
       confirmation_url:
-        'https://yoomoney.ru/checkout/payments/v2/contract?orderId=2d62ac41-000f-5000-a000-1d59e1654961',
+        'https://yoomoney.ru/checkout/payments/v2/contract?orderId=2b',
     },
   })
   confirmation: {
