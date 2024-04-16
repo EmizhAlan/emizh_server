@@ -13,10 +13,9 @@ import { AuthModule } from 'src/auth/auth.module';
 import { BoilerPartsModule } from 'src/boiler-parts/boiler-parts.module';
 import { BoilerPartsService } from '../../src/boiler-parts/boiler-parts.service';
 import { UsersService } from '../../src/users/users.service';
-
+import { ShoppingCart } from '../../src/shopping-cart/shopping-cart.model';
 import { ShoppingCartModule } from '../../src/shopping-cart/shopping-cart.module';
 import { ShoppingCartService } from '../../src/shopping-cart/shopping-cart.service';
-import { ShoppingCart } from 'src/shopping-cart/shoping-cart.model';
 
 const mockedUser = {
   username: 'Jhon',
